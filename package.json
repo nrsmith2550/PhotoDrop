@@ -1,0 +1,21 @@
+{
+  "name": "photodrop",
+  "version": "1.0.0",
+  "description": "Pay once, link your Google Drive, and collect photos from guests into a folder of your choice.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "@googleapis/drive": "^8.14.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "google-auth-library": "^9.14.0",
+    "multer": "^1.4.5-lts.1",
+    "stripe": "^17.0.0"
+  }
+}
